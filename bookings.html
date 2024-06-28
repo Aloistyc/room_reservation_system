@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div style="background-color: #fff; padding: 20px 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 300px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Booking Form</h2>
+        <form action="#" method="post" style="display: flex; flex-direction: column;">
+            <label for="firstName" style="margin-bottom: 5px; font-weight: bold;">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="lastName" style="margin-bottom: 5px; font-weight: bold;">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="email" style="margin-bottom: 5px; font-weight: bold;">Email:</label>
+            <input type="email" id="email" name="email" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="phone" style="margin-bottom: 5px; font-weight: bold;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                <div style="width: 48%;">
+                    <label for="checkin" style="margin-bottom: 5px; font-weight: bold;">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                <div style="width: 48%;">
+                    <label for="checkout" style="margin-bottom: 5px; font-weight: bold;">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+            </div>
+            
+            <label for="roomType" style="margin-bottom: 5px; font-weight: bold;">Room Type:</label>
+            <select id="roomType" name="roomType" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="Single room">Single room</option>
+                <option value="Deluxe room">Deluxe room</option>
+                <option value="Twin room">Twin room</option>
+                <option value="Suite room">Suite room</option>
+                <option value="Family room">Family room</option>
+            </select>
+            
+            <label for="paymentMethod" style="margin-bottom: 5px; font-weight: bold;">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required style="margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="Mpesa">Mpesa</option>
+                <option value="Paypal">Paypal</option>
+                <option value="Card">Card</option>
+            </select>
+            
+            <button type="submit" style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Book </button>
+        </form>
+    </div>
+</body>
+</html>
