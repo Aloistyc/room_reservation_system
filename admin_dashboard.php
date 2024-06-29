@@ -7,19 +7,19 @@ if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== tru
     exit();
 }
 
-// Database connection details
-$servername = "localhost";
-$username = "root";
-$password = ""; 
-$dbname = "Room";
+// // Database connection details
+// $servername = "localhost";
+// $username = "root";
+// $password = ""; 
+// $dbname = "Room";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// // Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
 
 // Function to get the number of booked rooms for each room type
 function getBookedRoomsCount($conn, $roomType) {
